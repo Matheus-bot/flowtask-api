@@ -2,9 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return {"mensagem": "API funcionando corretamente"}
+
 @app.route("/status")
 def status():
     return {"status:" "API online"}
@@ -12,6 +10,12 @@ def status():
 @app.route("/")
 def home():
     return "Sistema de Gerenciamento de Biblioteca"
+@app.route("/sobre")
+def sobre():
+    return "Sistema desenvolvido em Flask para estudo de CI/CD"
+
+
+
 
 
 if __name__ == "__main__":
