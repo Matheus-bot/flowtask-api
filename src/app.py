@@ -9,7 +9,8 @@ def status():
 
 @app.route("/")
 def home():
-    return "Sistema de Gerenciamento de Biblioteca"
+    return "Sistema de Biblioteca Online"
+
 @app.route("/sobre")
 def sobre():
     return "Sistema desenvolvido em Flask para estudo de CI/CD"
